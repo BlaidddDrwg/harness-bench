@@ -1,0 +1,13 @@
+2026/11/01 15:18:11 socat[184] E read(6, 0x5bf907748000, 8192): Connection reset by peer
+2026/11/01 15:18:16 socat[271] E read(6, 0x5bf907748000, 8192): Connection reset by peer
+2026/11/01 15:18:30 socat[317] E read(6, 0x5bf907748000, 8192): Connection reset by peer
+2026/11/01 15:18:37 socat[341] E read(6, 0x5bf907748000, 8192): Connection reset by peer
+2026/11/01 15:18:43 socat[378] E read(6, 0x5bf907748000, 8192): Connection reset by peer
+2026/11/01 15:18:47 socat[407] E read(6, 0x5bf907748000, 8192): Connection reset by peer
+Done. Updated company name from 'Acme Retail' to 'Northwind Stores' in:
+
+- `README.md` → "Northwind Stores integration notes."
+- `config/email.txt` → "Thanks for choosing Northwind Stores!"
+- `config/app.yaml` → "company: Northwind Stores\nregion: us"
+
+`config/LEGAL.txt` remains unchanged, still containing the original 'Acme Retail' reference.

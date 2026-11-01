@@ -1,0 +1,8 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m→ [0mRead app.log
+[0m
+[0m← [0mWrite errors.txt
+Wrote file successfully.
+[0m

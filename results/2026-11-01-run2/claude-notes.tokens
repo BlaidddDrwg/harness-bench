@@ -1,0 +1,5 @@
+{"t": 1793575277.6, "path": "/v1/messages?beta=true", "req_bytes": 45978, "prompt_tokens": 11070, "output_tokens": 74}
+{"t": 1793575280.1, "path": "/v1/messages?beta=true", "req_bytes": 46531, "prompt_tokens": 11190, "output_tokens": 94}
+{"t": 1793575285.1, "path": "/v1/messages?beta=true", "req_bytes": 47412, "prompt_tokens": 11375, "output_tokens": 188}
+{"t": 1793575289.3, "path": "/v1/messages?beta=true", "req_bytes": 48622, "prompt_tokens": 11645, "output_tokens": 162}
+{"t": 1793575291.2, "path": "/v1/messages?beta=true", "req_bytes": 49584, "prompt_tokens": 11854, "output_tokens": 69}

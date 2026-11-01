@@ -1,0 +1,6 @@
+Claude Code doesn't recognize the model "qwen3.5:9b", so it assumes a context window of 200k tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! Created `summary.csv` with totals:
+- Meals: 100.00
+- Software: 339.00  
+- Travel: 700.00

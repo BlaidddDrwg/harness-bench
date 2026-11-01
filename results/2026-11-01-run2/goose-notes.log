@@ -1,0 +1,62 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261101_6 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ tree
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+
+meeting-1.md  [3]
+meeting-2.md  [2]
+meeting-3.md  [3]
+
+  ────────────────────────────────────────
+  ▸ read
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-1.md
+
+
+  ────────────────────────────────────────
+  ▸ read
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-2.md
+
+
+  ────────────────────────────────────────
+  ▸ read
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-3.md
+
+Tool 'read' is not available.Tool 'read' is not available.Tool 'read' is not available.
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-1.md
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-2.md
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-3.md
+
+# Kickoff
+Priya will draft the pilot plan by Friday.
+We discussed budget.# Weekly
+General updates only. Nothing assigned.# Retail sync
+Action: Tom to send the store list to the client.
+Action: Priya to book the demo room.
+  ────────────────────────────────────────
+  ▸ write
+    path ~/Projects/AI/harness-bench/runs/goose/notes/actions.md
+    content: - Priya: Draft the pilot plan by Friday.
+- Tom: Send the store list to the client.
+- Priya: Book the demo room.
+
+
+Created /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/actions.md (3 lines)Done. I've created `actions.md` with the three real action items extracted from the meeting notes:
+- Priya: Draft the pilot plan by Friday
+- Tom: Send the store list to the client  
+- Priya: Book the demo room
+
+(Items like "We discussed budget" and "General updates only. Nothing assigned" were excluded as they aren't actionable items with owners.)

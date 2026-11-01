@@ -312,10 +312,14 @@ The same task run *k* times: does it pass every time?
 
 ## Known limitations (current version)
 
-- One run per task so far; repeats are not yet automated.
+- Two runs per task so far, started by hand; repeats are not yet automated.
 - Seven small tasks; most categories are planned, not implemented.
-- Latest results: `results/2026-10-31-run1/SUMMARY.md` (five harnesses, sandboxed, one run
-  per task; not yet enough to rank them).
+- Latest results: `results/2026-11-01-run2/SUMMARY.md`, compared with
+  `results/2026-10-31-run1/` (five harnesses, sandboxed; not yet enough to rank them).
+- In runs 1 and 2, OpenCode's file search failed because ripgrep was not installed (the
+  sandbox blocks its automatic download). Install `ripgrep` on the machine before running.
+- Claude Code assumes a 200k window for model names it doesn't know; `run.sh` sets
+  `CLAUDE_CODE_MAX_CONTEXT_TOKENS=32768` (from run 3 on).
 - The pilot run (`results/2026-10-31-pilot/`) is **not valid for comparison**:
   - Both sandboxes failed to start (Ubuntu's AppArmor user-namespace restriction), so
     Codex could not run commands and Claude Code ran unsandboxed.

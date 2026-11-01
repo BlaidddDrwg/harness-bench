@@ -1,0 +1,17 @@
+{"t": 1793575085.1, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575085.1, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575085.1, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575085.1, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575085.3, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575086.6, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575086.7, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575086.7, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575087.8, "path": "/api/show", "req_bytes": 21, "prompt_tokens": null, "output_tokens": null}
+{"t": 1793575091.4, "path": "/v1/chat/completions", "req_bytes": 53946, "prompt_tokens": 12948, "output_tokens": 90}
+{"t": 1793575096.9, "path": "/v1/chat/completions", "req_bytes": 54965, "prompt_tokens": 13188, "output_tokens": 172}
+{"t": 1793575104.7, "path": "/v1/chat/completions", "req_bytes": 56576, "prompt_tokens": 13545, "output_tokens": 305}
+{"t": 1793575110.4, "path": "/v1/chat/completions", "req_bytes": 60638, "prompt_tokens": 14571, "output_tokens": 160}
+{"t": 1793575117.0, "path": "/v1/chat/completions", "req_bytes": 62178, "prompt_tokens": 14924, "output_tokens": 252}
+{"t": 1793575123.3, "path": "/v1/chat/completions", "req_bytes": 64585, "prompt_tokens": 15493, "output_tokens": 224}
+{"t": 1793575127.2, "path": "/v1/chat/completions", "req_bytes": 66714, "prompt_tokens": 15965, "output_tokens": 127}
+{"t": 1793575128.7, "path": "/v1/chat/completions", "req_bytes": 1518, "prompt_tokens": 307, "output_tokens": 14}

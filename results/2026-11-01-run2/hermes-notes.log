@@ -1,0 +1,4 @@
+2026/11/01 15:17:49 socat[185] E read(6, 0x61e907774000, 8192): Connection reset by peer
+2026/11/01 15:17:54 socat[256] E read(6, 0x61e907774000, 8192): Connection reset by peer
+2026/11/01 15:18:00 socat[289] E read(6, 0x61e907774000, 8192): Connection reset by peer
+Done. Created actions.md with 3 real action items (Priya: draft pilot plan by Friday, Tom: send store list, Priya: book demo room). Meeting-2 had no assigned actions.

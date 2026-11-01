@@ -1,0 +1,17 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m✗ [0mGlob "**/*" failed[90m in .[0m
+[91m[1mError: [0mripgrep execution failed
+[0m
+[0m$ [0mls "/home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/notes"
+meeting-1.md
+meeting-2.md
+meeting-3.md
+[0m
+[0m→ [0mRead meeting-1.md
+[0m→ [0mRead meeting-2.md
+[0m→ [0mRead meeting-3.md
+- [ ] Priya will draft the pilot plan by Friday.
+- [ ] Tom to send the store list to the client.
+- [ ] Priya to book the demo room.
