@@ -1,0 +1,3 @@
+2026/10/31 21:07:46 socat[253] E read(6, 0x5b4874057000, 8192): Connection reset by peer
+2026/10/31 21:07:52 socat[285] E read(6, 0x5b4874057000, 8192): Connection reset by peer
+Done. actions.md contains 3 real action items with their owners from the meeting notes (meeting-1 and meeting-3 had assignable actions; meeting-2 only contained general updates with no assignments).

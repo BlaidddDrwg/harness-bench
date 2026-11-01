@@ -1,0 +1,66 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261101_7 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ tree
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace
+    depth: 5
+
+config/  [4]
+  LEGAL.txt  [1]
+  app.yaml  [2]
+  email.txt  [1]
+README.md  [1]
+
+  ────────────────────────────────────────
+  ▸ cat
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/app.yaml
+
+Tool 'cat' is not available.
+  ────────────────────────────────────────
+  ▸ shell
+    command: find /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace -type f ! -path "*/.git/*" | sort
+
+/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/app.yaml
+/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/email.txt
+/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/LEGAL.txt
+/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/README.md
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat "/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/app.yaml"
+
+company: Acme Retail
+region: us
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat "/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/email.txt"
+
+Thanks for choosing Acme Retail!
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat "/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/README.md"
+
+Acme Retail integration notes.
+  ────────────────────────────────────────
+  ▸ edit
+    path ~/P/A/h/r/g/r/config/app.yaml
+    before: company: Acme Retail
+    after: company: Northwind Stores
+
+Edited /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/app.yaml (1 lines -> 1 lines)
+  ────────────────────────────────────────
+  ▸ edit
+    path ~/P/A/h/r/g/r/config/email.txt
+    before: Thanks for choosing Acme Retail!
+    after: Thanks for choosing Northwind Stores!
+
+Edited /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/config/email.txt (1 lines -> 1 lines)
+  ────────────────────────────────────────
+  ▸ edit
+    path ~/Projects/AI/harness-bench/runs/goose/replace/README.md
+    before: Acme Retail integration notes.
+    after: Northwind Stores integration notes.
+
+Edited /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace/README.md (1 lines -> 1 lines)

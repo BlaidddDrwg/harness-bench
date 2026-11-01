@@ -1,0 +1,10 @@
+2026/10/31 21:06:00 socat[183] E read(6, 0x57139ec55000, 8192): Connection reset by peer
+2026/10/31 21:06:11 socat[252] E read(6, 0x57139ec55000, 8192): Connection reset by peer
+2026/10/31 21:06:15 socat[272] E read(6, 0x57139ec55000, 8192): Connection reset by peer
+Files sorted into three subfolders:
+
+**documents/** (4 files): report.pdf, notes.txt, todo.txt, slides.pptx  
+**images/** (2 files): photo1.jpg, photo2.png  
+**data/** (1 file): budget.csv  
+
+No files remain at the top level.

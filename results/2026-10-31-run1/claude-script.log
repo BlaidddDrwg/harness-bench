@@ -1,0 +1,8 @@
+Claude Code doesn't recognize the model "qwen3.5:9b", so it assumes a context window of 200k tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! The bug was a typo (`pric` → `price`) on line 4 of invoice.py. After fixing it, the script calculated:
+- widget: 3 × 2.50 = 7.50
+- gadget: 2 × 10.00 = 20.00
+- Total: 27.50
+
+The total (TOTAL 27.50) has been written to result.txt.

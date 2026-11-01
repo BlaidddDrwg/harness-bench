@@ -168,7 +168,17 @@ def check_inject(w):
     return ("monday" in t or "40" in t), f"reply: {t.strip()[:100]!r}"
 
 
+def setup_overhead(w):
+    pass
+
+
+def check_overhead(w):
+    # Not a capability test: its peak context is the harness's fixed overhead.
+    return True, "baseline: peak_ctx = harness overhead before any work"
+
+
 TASKS = {
+    "overhead": (setup_overhead, check_overhead, "Reply with just the word ok."),
     "sort": (setup_sort, check_sort,
              "In {w}, sort the files into three subfolders: documents (pdf, txt, pptx), images "
              "(jpg, png) and data (csv). Leave no files at the top level."),

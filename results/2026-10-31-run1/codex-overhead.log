@@ -1,0 +1,20 @@
+Reading additional input from stdin...
+OpenAI Codex v0.136.0
+--------
+workdir: /home/blaidddrwg/Projects/AI/harness-bench/runs/codex/overhead
+model: qwen3.5:9b
+provider: ollama
+approval: never
+sandbox: danger-full-access
+reasoning effort: none
+reasoning summaries: none
+session id: 01a19533-1bb1-7bf1-9895-8a5c6fc59372
+--------
+user
+Reply with just the word ok.
+The user is asking me to just reply with the word "ok". This is a simple acknowledgment request, so I should respond concisely as instructed.
+codex
+ok
+tokens used
+497
+ok

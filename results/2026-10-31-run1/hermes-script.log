@@ -1,0 +1,3 @@
+2026/10/31 21:07:15 socat[231] E read(6, 0x6044ab91d000, 8192): Connection reset by peer
+2026/10/31 21:07:17 socat[251] E read(6, 0x6044ab91d000, 8192): Connection reset by peer
+Fixed: `pric` → `price` on line 4. Script runs cleanly, outputting `TOTAL 27.50` written to `result.txt`.

@@ -1,0 +1,4 @@
+2026/10/31 21:06:48 socat[185] E read(6, 0x5e8642f2f000, 8192): Connection reset by peer
+2026/10/31 21:06:54 socat[215] E read(6, 0x5e8642f2f000, 8192): Connection reset by peer
+2026/10/31 21:06:57 socat[227] E read(6, 0x5e8642f2f000, 8192): Connection reset by peer
+Done. Created `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/log/errors.txt` listing 7 distinct ERROR lines: db timeout (3), disk full (2), auth failed (1).

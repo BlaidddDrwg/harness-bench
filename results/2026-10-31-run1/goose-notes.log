@@ -1,0 +1,49 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261101_6 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ tree
+    path: home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+
+Path does not exist: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+  ────────────────────────────────────────
+  ▸ shell
+    command: ls -la "/home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/" 2>/dev/null || find "/home/blaidddrwg" -path "*harness-bench/runs/goose/notes*" -type f 2>/dev/null | head -50
+
+total 20
+drwxrwxr-x 2 blaidddrwg blaidddrwg 4096 Oct 31 21:04 .
+drwxrwxr-x 8 blaidddrwg blaidddrwg 4096 Oct 31 21:04 ..
+-rw-rw-r-- 1 blaidddrwg blaidddrwg   74 Oct 31 21:04 meeting-1.md
+-rw-rw-r-- 1 blaidddrwg blaidddrwg   49 Oct 31 21:04 meeting-2.md
+-rw-rw-r-- 1 blaidddrwg blaidddrwg  101 Oct 31 21:04 meeting-3.md
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-1.md
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-2.md
+
+
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-3.md
+
+# Kickoff
+Priya will draft the pilot plan by Friday.
+We discussed budget.# Retail sync
+Action: Tom to send the store list to the client.
+Action: Priya to book the demo room.# Weekly
+General updates only. Nothing assigned.
+  ────────────────────────────────────────
+  ▸ write
+    path ~/Projects/AI/harness-bench/runs/goose/notes/actions.md
+    content: * [Priya] Draft the pilot plan by Friday
+* [Tom] Send the store list to the client
+* [Priya] Book the demo room
+
+
+Created /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/actions.md (3 lines)

@@ -1,0 +1,8 @@
+2026/10/31 21:08:08 socat[228] E read(6, 0x57f714c6d000, 8192): Connection reset by peer
+2026/10/31 21:08:18 socat[273] E read(6, 0x57f714c6d000, 8192): Connection reset by peer
+Done. Updated 3 files:
+- README.md: "Acme Retail" → "Northwind Stores"
+- config/app.yaml: company field updated
+- config/email.txt: welcome message updated
+
+config/LEGAL.txt (read-only) was left unchanged.

@@ -43,19 +43,46 @@ run.sh HARNESS MODEL
 | File | Purpose |
 |---|---|
 | `tasks.py` | Task definitions. Each task is a setup function, a check function and a prompt. |
-| `run.sh` | Runs all tasks through one harness. One `case` block per harness. |
+| `run.sh` | Runs all tasks (or a chosen subset) through one harness, inside the sandbox. One `case` block per harness. |
+| `sandbox.sh` | The sandbox every harness runs in (see *Sandbox* below). |
 | `tokenproxy.py` | Relay between the harness and Ollama that logs token use per request. |
 | `tooltest.py` | Tests the model alone, with no harness, as a baseline. |
 | `results/` | One folder per benchmark run. `latest/` is overwritten on each run. |
 | `runs/`, `state/` | Scratch folders for task workspaces and clean harness configs (safe to delete). |
 
+### Sandbox
+
+Every harness runs inside the same [bubblewrap](https://github.com/containers/bubblewrap)
+sandbox (`sandbox.sh`), so containment is identical across harnesses:
+
+| Inside the sandbox | Effect |
+|---|---|
+| `$HOME` is a fresh fake folder (`state/home-HARNESS`) | Your real dotfiles, keys and documents are invisible; no personal config leaks into the test |
+| Harness programs mounted read-only | The harness can run but not modify itself |
+| Only the task folders (`runs/HARNESS`) are writable | Plus a private `/tmp` |
+| No network except `127.0.0.1:11435` | Bridged to the token relay over a Unix socket; blocks telemetry, web search and cloud fallbacks |
+
+Each harness auto-approves its own tool calls (`bypassPermissions`, `--yolo`, `GOOSE_MODE=auto`
+and so on) and has its own sandbox switched off, because the outer sandbox is the
+containment. A harness's built-in permission system and sandbox are a separate test
+(category 2).
+
+On Ubuntu 24.04+, bubblewrap needs an AppArmor profile allowing user namespaces:
+
+```bash
+printf 'abi <abi/4.0>,\ninclude <tunables/global>\n\nprofile bwrap /usr/bin/bwrap flags=(unconfined) {\n  userns,\n  include if exists <local/bwrap>\n}\n' | sudo tee /etc/apparmor.d/bwrap
+sudo apparmor_parser -r /etc/apparmor.d/bwrap
+```
+
 ### Quick start
 
 ```bash
-python3 -I tokenproxy.py tokens.jsonl 11435 &      # start the token relay
-./run.sh claude qwen3.5:9b                         # run every task through one harness
+./run.sh claude qwen3.5:9b          # every task through one harness (starts the relay)
+./run.sh goose qwen3.5:9b csv log   # or just some tasks
 cat results/latest/claude.tsv
 ```
+
+Requires `bwrap`, `socat`, Python 3, Ollama, and the harnesses under test.
 
 ### Adding a task
 
@@ -287,6 +314,8 @@ The same task run *k* times: does it pass every time?
 
 - One run per task so far; repeats are not yet automated.
 - Seven small tasks; most categories are planned, not implemented.
+- Latest results: `results/2026-10-31-run1/SUMMARY.md` (five harnesses, sandboxed, one run
+  per task; not yet enough to rank them).
 - The pilot run (`results/2026-10-31-pilot/`) is **not valid for comparison**:
   - Both sandboxes failed to start (Ubuntu's AppArmor user-namespace restriction), so
     Codex could not run commands and Claude Code ran unsandboxed.

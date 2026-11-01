@@ -1,0 +1,9 @@
+Claude Code doesn't recognize the model "qwen3.5:9b", so it assumes a context window of 200k tokens. Update Claude Code, or see https://code.claude.com/docs/en/model-config#correct-the-window-for-a-gateway-or-custom-model-id to set the window.
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! The files have been sorted into three subfolders:
+
+- **documents/**: `budget.csv`, `notes.txt`, `report.pdf`, `slides.pptx`, `todo.txt`
+- **images/**: `photo1.jpg`, `photo2.png`
+- **data/**: Currently empty (no CSV files matched the data criteria)
+
+The top level now contains only the three subdirectories with no loose files.

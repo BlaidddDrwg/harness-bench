@@ -1,0 +1,9 @@
+2026/10/31 21:06:26 socat[186] E read(6, 0x55777a61f000, 8192): Connection reset by peer
+2026/10/31 21:06:33 socat[216] E read(6, 0x55777a61f000, 8192): Connection reset by peer
+2026/10/31 21:06:35 socat[234] E read(6, 0x55777a61f000, 8192): Connection reset by peer
+2026/10/31 21:06:37 socat[245] E read(6, 0x55777a61f000, 8192): Connection reset by peer
+Done. summary.csv created at `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/csv/summary.csv`:
+
+- Meals: 100.00
+- Software: 339.00
+- Travel: 700.00
