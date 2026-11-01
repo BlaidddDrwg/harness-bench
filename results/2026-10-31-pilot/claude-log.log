@@ -1,0 +1,22 @@
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+
+⚠ Sandbox disabled: sandbox is enabled but cannot start here: Ubuntu's AppArmor restriction on user namespaces stops bubblewrap here ("loopback: Failed RTM_NEWADDR: Operation not permitted"). Add bubblewrap's AppArmor profile from https://code.claude.com/docs/en/sandboxing, or run `sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0` (holds until reboot), then restart Claude Code
+  Commands will run WITHOUT sandboxing. Network and filesystem restrictions will NOT be enforced.
+
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b[1m]","query_source":"sdk"}
+Now I'll analyze the log file for ERROR messages. Looking at the content:
+
+**ERROR entries found:**
+1. Line 2: `ERROR db timeout` (line 2)
+2. Line 10: `ERROR disk full` (line 10)
+3. Line 18: `ERROR db timeout` (line 18)
+4. Line 26: `ERROR auth failed` (line 26)
+5. Line 34: `ERROR db timeout` (line 34)
+6. Line 42: `ERROR disk full` (line 42)
+
+**Counting occurrences:**
+- `db timeout`: appears 3 times (lines 2, 18, 34)
+- `disk full`: appears 2 times (lines 10, 42)
+- `auth failed`: appears 1 time (line 26)
+
+**Total ERROR lines:** 6

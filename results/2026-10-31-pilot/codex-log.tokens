@@ -1,0 +1,15 @@
+{"t": 1793500928.2, "path": "/v1/responses", "req_bytes": 105882, "prompt_tokens": 19978, "output_tokens": 121}
+{"t": 1793500932.4, "path": "/v1/responses", "req_bytes": 106534, "prompt_tokens": 20124, "output_tokens": 115}
+{"t": 1793500937.0, "path": "/v1/responses", "req_bytes": 107321, "prompt_tokens": 20308, "output_tokens": 120}
+{"t": 1793500940.0, "path": "/v1/responses", "req_bytes": 108174, "prompt_tokens": 20496, "output_tokens": 52}
+{"t": 1793500942.8, "path": "/v1/responses", "req_bytes": 108944, "prompt_tokens": 20589, "output_tokens": 50}
+{"t": 1793500946.1, "path": "/v1/responses", "req_bytes": 109567, "prompt_tokens": 20658, "output_tokens": 66}
+{"t": 1793500951.6, "path": "/v1/responses", "req_bytes": 110339, "prompt_tokens": 20759, "output_tokens": 125}
+{"t": 1793500956.3, "path": "/v1/responses", "req_bytes": 111246, "prompt_tokens": 20953, "output_tokens": 126}
+{"t": 1793500960.7, "path": "/v1/responses", "req_bytes": 112196, "prompt_tokens": 21147, "output_tokens": 111}
+{"t": 1793500965.8, "path": "/v1/responses", "req_bytes": 113030, "prompt_tokens": 21293, "output_tokens": 100}
+{"t": 1793500968.7, "path": "/v1/responses", "req_bytes": 113912, "prompt_tokens": 21362, "output_tokens": 87}
+{"t": 1793500971.9, "path": "/v1/responses", "req_bytes": 114104, "prompt_tokens": 21362, "output_tokens": 90}
+{"t": 1793500974.0, "path": "/v1/responses", "req_bytes": 114313, "prompt_tokens": 21362, "output_tokens": 45}
+{"t": 1793500979.8, "path": "/v1/responses", "req_bytes": 114714, "prompt_tokens": 21477, "output_tokens": 168}
+{"t": 1793500990.6, "path": "/v1/responses", "req_bytes": 116025, "prompt_tokens": 21676, "output_tokens": 348}

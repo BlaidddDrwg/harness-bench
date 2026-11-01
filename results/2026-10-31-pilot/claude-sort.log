@@ -1,0 +1,22 @@
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+
+⚠ Sandbox disabled: sandbox is enabled but cannot start here: Ubuntu's AppArmor restriction on user namespaces stops bubblewrap here ("loopback: Failed RTM_NEWADDR: Operation not permitted"). Add bubblewrap's AppArmor profile from https://code.claude.com/docs/en/sandboxing, or run `sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0` (holds until reboot), then restart Claude Code
+  Commands will run WITHOUT sandboxing. Network and filesystem restrictions will NOT be enforced.
+
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b[1m]","query_source":"sdk"}
+Done! I've sorted the files into three subfolders:
+
+**documents/** (pdf, txt, pptx):
+- `notes.txt`
+- `report.pdf`
+- `slides.pptx`
+- `todo.txt`
+
+**images/** (jpg, png):
+- `photo1.jpg`
+- `photo2.png`
+
+**data/** (csv):
+- `budget.csv`
+
+No files remain at the top level of the directory.

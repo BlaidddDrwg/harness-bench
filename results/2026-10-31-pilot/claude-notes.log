@@ -1,0 +1,13 @@
+⚠ claude.ai connectors are disabled because ANTHROPIC_API_KEY or another auth source is set and takes precedence over your claude.ai login · Unset it to load your organization's connectors
+
+⚠ Sandbox disabled: sandbox is enabled but cannot start here: Ubuntu's AppArmor restriction on user namespaces stops bubblewrap here ("loopback: Failed RTM_NEWADDR: Operation not permitted"). Add bubblewrap's AppArmor profile from https://code.claude.com/docs/en/sandboxing, or run `sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0` (holds until reboot), then restart Claude Code
+  Commands will run WITHOUT sandboxing. Network and filesystem restrictions will NOT be enforced.
+
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b[1m]","query_source":"sdk"}
+Done! I've created `actions.md` with all the real action items from the meeting notes:
+
+- [Priya] Draft the pilot plan by Friday.
+- [Tom] Send the store list to the client.
+- [Priya] Book the demo room.
+
+Note: Items like "discussed budget" and "general updates only" were excluded as they weren't specific action items with owners.

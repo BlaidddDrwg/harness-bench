@@ -1,0 +1,2 @@
+{"t": 1793500337.2, "path": "/v1/messages?beta=true", "req_bytes": 100970, "prompt_tokens": 24593, "output_tokens": 188}
+{"t": 1793500346.5, "path": "/v1/messages?beta=true", "req_bytes": 105606, "prompt_tokens": 25700, "output_tokens": 237}
