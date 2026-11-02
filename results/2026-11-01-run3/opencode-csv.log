@@ -1,0 +1,36 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m→ [0mRead expenses.csv
+[0m
+[0m$ [0mpython3 << 'EOF'
+import csv
+from collections import defaultdict
+
+# Read expenses.csv
+data = []
+with open('/home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/csv/expenses.csv', 'r') as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        category = row['category']
+        amount = float(row['amount'])
+        data.append((category, amount))
+
+# Group by category and sum amounts
+totals = defaultdict(float)
+for category, amount in data:
+    totals[category] += amount
+
+# Write summary.csv
+with open('/home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/csv/summary.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['category', 'total'])  # header row
+    for category in sorted(totals.keys()):
+        writer.writerow([category, f"{totals[category]:.2f}"])
+
+print("summary.csv written successfully")
+EOF
+
+summary.csv written successfully
+[0m
+Done. Created summary.csv with categories and their total amounts formatted to two decimal places.

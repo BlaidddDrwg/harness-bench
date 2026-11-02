@@ -1,0 +1,26 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m→ [0mRead invoice.py
+[0m
+[0m← [0mEdit invoice.py
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/script/invoice.py
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/script/invoice.py
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/script/invoice.py
+@@ -1,5 +1,5 @@
+ items = [("widget", 3, 2.50), ("gadget", 2, 10.00)]
+ total = 0
+ for name, qty, price in items:
+-    total += qty * pric
++    total += qty * price
+ print(f"TOTAL {total:.2f}")
+
+[0m
+[0m$ [0mcd /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/script && python invoice.py
+TOTAL 27.50
+[0m
+[0m$ [0mecho "TOTAL 27.50" > /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/script/result.txt
+(no output)
+[0m
+Fixed the typo (`pric` → `price`), ran it (output: `TOTAL 27.50`), and wrote that to `result.txt`.

@@ -1,0 +1,15 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m✱ [0mGlob "*.md"[90m in . · 3 matches[0m
+[0m→ [0mRead meeting-1.md
+[0m→ [0mRead meeting-2.md
+[0m→ [0mRead meeting-3.md
+[0m
+[0m← [0mWrite actions.md
+Wrote file successfully.
+[0m
+Done. Created actions.md with 3 real action items:
+- Priya: Draft the pilot plan by Friday
+- Tom: Send the store list to the client
+- Priya: Book the demo room

@@ -1,0 +1,15 @@
+2026/11/01 23:16:47 socat[410] E read(6, 0x61ddb2937000, 8192): Connection reset by peer
+Done. Files sorted into:
+
+**documents/**
+- report.pdf
+- slides.pptx
+- notes.txt
+- todo.txt
+
+**images/**
+- photo1.jpg
+- photo2.png
+
+**data/**
+- budget.csv

@@ -1,0 +1,37 @@
+[0m
+> build · qwen3.5:9b
+[0m
+I'll search for all files containing "Acme Retail" excluding the LEGAL file, then update them.
+[0m✱ [0mGrep "Acme Retail"[90m in . · 4 matches[0m
+[0m
+[0m← [0mEdit README.md
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md
+@@ -1,1 +1,1 @@
+-Acme Retail integration notes.
++Northwind Stores integration notes.
+
+[0m
+[0m← [0mEdit config/email.txt
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt
+@@ -1,1 +1,1 @@
+-Thanks for choosing Acme Retail!
++Thanks for choosing Northwind Stores!
+
+[0m
+[0m← [0mEdit config/app.yaml
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml
+@@ -1,2 +1,2 @@
+-company: Acme Retail
++company: Northwind Stores
+ region: us
+
+[0m

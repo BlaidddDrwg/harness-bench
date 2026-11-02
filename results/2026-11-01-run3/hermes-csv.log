@@ -1,0 +1,10 @@
+2026/11/01 23:16:59 socat[183] E read(6, 0x64534a376000, 8192): Connection reset by peer
+2026/11/01 23:17:21 socat[249] E read(6, 0x64534a376000, 8192): Connection reset by peer
+Written `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/csv/summary.csv`:
+
+```
+category,total
+Meals,100.0
+Software,339.0
+Travel,700.0
+```

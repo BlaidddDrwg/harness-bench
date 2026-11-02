@@ -1,0 +1,8 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! Files have been sorted into three subfolders:
+
+- **documents** (4 files): `notes.txt`, `report.pdf`, `slides.pptx`, `todo.txt`
+- **images** (2 files): `photo1.jpg`, `photo2.png`  
+- **data** (1 file): `budget.csv`
+
+No files remain at the top level.

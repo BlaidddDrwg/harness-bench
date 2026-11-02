@@ -1,0 +1,3 @@
+{"t": 1793599978.0, "path": "/v1/messages?beta=true", "req_bytes": 45912, "prompt_tokens": 11054, "output_tokens": 66}
+{"t": 1793600014.0, "path": "/v1/messages?beta=true", "req_bytes": 53078, "prompt_tokens": 12795, "output_tokens": 1406}
+{"t": 1793600029.6, "path": "/v1/messages?beta=true", "req_bytes": 49393, "prompt_tokens": 11905, "output_tokens": 58}

@@ -1,0 +1,30 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261102_6 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ tree
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+
+meeting-1.md  [3]
+meeting-2.md  [2]
+meeting-3.md  [3]
+
+  ────────────────────────────────────────
+  ▸ read_message
+    message_index: 0
+
+Tool 'read_message' is not available.
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat meeting-1.md meeting-2.md meeting-3.md
+
+# Kickoff
+Priya will draft the pilot plan by Friday.
+We discussed budget.
+# Weekly
+General updates only. Nothing assigned.
+# Retail sync
+Action: Tom to send the store list to the client.
+Action: Priya to book the demo room.

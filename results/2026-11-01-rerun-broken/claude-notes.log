@@ -1,0 +1,8 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+The `actions.md` file has been successfully created with all three action items from the meeting notes:
+
+- [ ] Priya - draft the pilot plan by Friday
+- [ ] Tom - send the store list to the client  
+- [ ] Priya - book the demo room
+
+The task is complete.

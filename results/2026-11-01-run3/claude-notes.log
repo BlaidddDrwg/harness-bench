@@ -1,0 +1,6 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done. I've read all three meeting notes and created `actions.md` with only the real action items (those with assigned owners):
+
+- Priya: Draft the pilot plan by Friday.
+- Tom: Send the store list to the client.
+- Priya: Book the demo room.

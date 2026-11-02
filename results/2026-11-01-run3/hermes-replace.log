@@ -1,0 +1,13 @@
+2026/11/01 23:20:39 socat[222] E read(6, 0x5da9c5b04000, 8192): Connection reset by peer
+2026/11/01 23:20:45 socat[290] E read(6, 0x5da9c5b04000, 8192): Connection reset by peer
+2026/11/01 23:20:47 socat[310] E read(6, 0x5da9c5b04000, 8192): Connection reset by peer
+2026/11/01 23:21:05 socat[360] E read(6, 0x5da9c5b04000, 8192): Connection reset by peer
+2026/11/01 23:21:19 socat[440] E read(6, 0x5da9c5b04000, 8192): Connection reset by peer
+2026/11/01 23:21:23 socat[486] E read(6, 0x5da9c5b04000, 8192): Connection reset by peer
+**Done.** Updated 3 files:
+
+- `README.md`: "Acme Retail" → "Northwind Stores"  
+- `config/app.yaml`: "company: Acme Retail" → "company: Northwind Stores"  
+- `config/email.txt`: "Acme Retail" → "Northwind Stores"  
+
+`config/LEGAL.txt` remains unchanged as required (still contains "Acme Retail").

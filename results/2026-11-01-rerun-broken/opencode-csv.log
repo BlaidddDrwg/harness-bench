@@ -1,0 +1,9 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m→ [0mRead expenses.csv
+[0m
+[0m← [0mWrite summary.csv
+Wrote file successfully.
+[0m
+Done. `summary.csv` created with category totals rounded to 2 decimals.

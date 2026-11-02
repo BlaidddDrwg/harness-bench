@@ -1,0 +1,11 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Task completed successfully. The `errors.txt` file at `/home/blaidddrwg/Projects/AI/harness-bench/runs/claude/log/errors.txt` contains:
+
+```
+db timeout: 3
+disk full: 2
+auth failed: 1
+Total ERROR lines: 6
+```
+
+This accurately reflects the ERROR entries from `app.log` (lines 2, 10, 18, 26, 34, and 42), with error types counted correctly.

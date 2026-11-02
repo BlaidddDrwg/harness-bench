@@ -46,7 +46,7 @@ case "$H" in
       "npm": "@ai-sdk/openai-compatible",
       "name": "Local Ollama via relay",
       "options": {"baseURL": "$PROXY/v1"},
-      "models": {"$M": {"name": "$M", "tools": true}}
+      "models": {"$M": {"name": "$M", "tools": true, "limit": {"context": 81920, "output": 8192}}}
     }
   },
   "model": "local/$M",
@@ -72,7 +72,7 @@ agent_cmd() {
   case "$H" in
     claude)
       env ANTHROPIC_BASE_URL=$PROXY ANTHROPIC_AUTH_TOKEN=ollama ANTHROPIC_API_KEY= \
-        CLAUDE_CODE_MAX_CONTEXT_TOKENS=32768 \
+        CLAUDE_CODE_MAX_CONTEXT_TOKENS=81920 CLAUDE_CODE_MAX_OUTPUT_TOKENS=8192 \
         CLAUDE_CODE_AUTO_MODE_SERVER=0 ANTHROPIC_MODEL="$M" ANTHROPIC_DEFAULT_OPUS_MODEL="$M" \
         ANTHROPIC_DEFAULT_SONNET_MODEL="$M" ANTHROPIC_DEFAULT_HAIKU_MODEL="$M" \
         ANTHROPIC_SMALL_FAST_MODEL="$M" CLAUDE_CODE_SUBAGENT_MODEL="$M" \

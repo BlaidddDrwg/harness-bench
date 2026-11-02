@@ -47,6 +47,7 @@ run.sh HARNESS MODEL
 | `sandbox.sh` | The sandbox every harness runs in (see *Sandbox* below). |
 | `tokenproxy.py` | Relay between the harness and Ollama that logs token use per request. |
 | `tooltest.py` | Tests the model alone, with no harness, as a baseline. |
+| `ctxtest.py` | Finds the largest context window that fits on the GPU, and checks recall at each size. |
 | `results/` | One folder per benchmark run. `latest/` is overwritten on each run. |
 | `runs/`, `state/` | Scratch folders for task workspaces and clean harness configs (safe to delete). |
 
@@ -312,14 +313,17 @@ The same task run *k* times: does it pass every time?
 
 ## Known limitations (current version)
 
-- Two runs per task so far, started by hand; repeats are not yet automated.
+- Three runs per task so far, started by hand; repeats are not yet automated. Run 3
+  changed the context to 80k, so it is not directly comparable with runs 1 and 2.
 - Seven small tasks; most categories are planned, not implemented.
-- Latest results: `results/2026-11-01-run2/SUMMARY.md`, compared with
+- Latest results: `results/2026-11-01-run3/SUMMARY.md` (all three runs compared); context
+  size test: `results/2026-11-01-context/RESULTS.md`. Earlier: `results/2026-11-01-run2/`,
   `results/2026-10-31-run1/` (five harnesses, sandboxed; not yet enough to rank them).
 - In runs 1 and 2, OpenCode's file search failed because ripgrep was not installed (the
   sandbox blocks its automatic download). Install `ripgrep` on the machine before running.
 - Claude Code assumes a 200k window for model names it doesn't know; `run.sh` sets
-  `CLAUDE_CODE_MAX_CONTEXT_TOKENS=32768` (from run 3 on).
+  `CLAUDE_CODE_MAX_CONTEXT_TOKENS=81920` and `CLAUDE_CODE_MAX_OUTPUT_TOKENS=8192`
+  (from run 3 on). Without the output limit, it reserves 32k for replies.
 - The pilot run (`results/2026-10-31-pilot/`) is **not valid for comparison**:
   - Both sandboxes failed to start (Ubuntu's AppArmor user-namespace restriction), so
     Codex could not run commands and Claude Code ran unsandboxed.

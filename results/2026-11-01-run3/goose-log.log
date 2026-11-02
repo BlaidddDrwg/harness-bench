@@ -1,0 +1,48 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261102_4 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ read_image
+    source: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/app.log
+
+Error: unsupported image format; supported formats are png, jpeg, gif, and webp
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/app.log | grep "ERROR" > errors.txt; wc -l < errors.txt ; awk '/ERROR/{count++} END{print count}' /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/app.log > total_errors.tmp; echo "done"
+
+6
+done
+  ────────────────────────────────────────
+  ▸ shell
+    command: total=$(grep -c "ERROR" /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/app.log); echo "Total ERROR lines: $total"; grep "ERROR" /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/app.log | sed 's/,.*//' | sort | uniq -c > /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/errors.txt; cat errors.txt
+
+Total ERROR lines: 6
+      1 2026-10-31 10:00:30 ERROR db timeout
+      1 2026-10-31 10:07:30 ERROR disk full
+      1 2026-10-31 10:14:30 ERROR db timeout
+      1 2026-10-31 10:21:30 ERROR auth failed
+      1 2026-10-31 10:28:30 ERROR db timeout
+      1 2026-10-31 10:35:30 ERROR disk full
+  ────────────────────────────────────────
+  ▸ shell
+    command: grep "ERROR" /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/app.log | sed 's/^.*ERROR //' | sed 's/,.*//' | sort | uniq -c > errors.txt; cat errors.txt
+
+      1 auth failed
+      3 db timeout
+      2 disk full
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat > /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/errors.txt << 'EOF'
+auth failed: 1
+db timeout: 3
+disk full: 2
+Total ERROR lines: 6
+EOF
+cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/log/errors.txt
+
+auth failed: 1
+db timeout: 3
+disk full: 2
+Total ERROR lines: 6

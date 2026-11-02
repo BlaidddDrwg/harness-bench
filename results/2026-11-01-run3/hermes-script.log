@@ -1,0 +1,4 @@
+2026/11/01 23:19:46 socat[183] E read(6, 0x621a52124000, 8192): Connection reset by peer
+2026/11/01 23:19:55 socat[242] E read(6, 0x621a52124000, 8192): Connection reset by peer
+2026/11/01 23:19:57 socat[252] E read(6, 0x621a52124000, 8192): Connection reset by peer
+Fixed `invoice.py` (typo `pric` → `price`). Script outputs `TOTAL 27.50`. Written `27.50` to `result.txt`.

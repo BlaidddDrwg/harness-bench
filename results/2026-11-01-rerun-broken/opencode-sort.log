@@ -1,0 +1,50 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m$ [0mls -la /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/
+total 36
+drwxrwxr-x  2 blaidddrwg blaidddrwg 4096 Nov  1 22:15 .
+drwxrwxr-x 10 blaidddrwg blaidddrwg 4096 Nov  1 22:15 ..
+-rw-rw-r--  1 blaidddrwg blaidddrwg    3 Nov  1 22:15 budget.csv
+-rw-rw-r--  1 blaidddrwg blaidddrwg    2 Nov  1 22:15 notes.txt
+-rw-rw-r--  1 blaidddrwg blaidddrwg    3 Nov  1 22:15 photo1.jpg
+-rw-rw-r--  1 blaidddrwg blaidddrwg    3 Nov  1 22:15 photo2.png
+-rw-rw-r--  1 blaidddrwg blaidddrwg    9 Nov  1 22:15 report.pdf
+-rw-rw-r--  1 blaidddrwg blaidddrwg    2 Nov  1 22:15 slides.pptx
+-rw-rw-r--  1 blaidddrwg blaidddrwg    1 Nov  1 22:15 todo.txt
+[0m
+[0m$ [0mmkdir /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/documents && \
+mkdir /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/images && \
+mkdir /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/data && \
+mv /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/*.pdf \
+   /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/*.pptx \
+   /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/*.txt \
+   /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/documents/ && \
+mv /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/*.jpg \
+   /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/*.png \
+   /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/images/ && \
+mv /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/*.csv \
+   /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/data/
+(no output)
+[0m
+[0m$ [0mls -la /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/documents/ && \
+echo "---" && ls /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/images/ && \
+echo "---" && ls /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/data/ && \
+echo "--- Top level:" && ls /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/sort/
+total 24
+drwxrwxr-x 2 blaidddrwg blaidddrwg 4096 Nov  1 22:20 .
+drwxrwxr-x 5 blaidddrwg blaidddrwg 4096 Nov  1 22:20 ..
+-rw-rw-r-- 1 blaidddrwg blaidddrwg    2 Nov  1 22:15 notes.txt
+-rw-rw-r-- 1 blaidddrwg blaidddrwg    9 Nov  1 22:15 report.pdf
+-rw-rw-r-- 1 blaidddrwg blaidddrwg    2 Nov  1 22:15 slides.pptx
+-rw-rw-r-- 1 blaidddrwg blaidddrwg    1 Nov  1 22:15 todo.txt
+---
+photo1.jpg
+photo2.png
+---
+budget.csv
+--- Top level:
+data
+documents
+images
+[0m

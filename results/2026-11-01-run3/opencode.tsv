@@ -1,0 +1,8 @@
+PASS	overhead	baseline: peak_ctx = harness overhead before any work	22s	reqs=2	peak_ctx=7295	rc=0
+PASS	sort	ok	150s	reqs=6	peak_ctx=8542	rc=0
+PASS	csv	got {'meals': 100.0, 'software': 339.0, 'travel': 700.0}	38s	reqs=4	peak_ctx=7890	rc=0
+PASS	log	db timeout: 3 | disk full: 2 | auth failed: 1 | total error lines: 6	67s	reqs=7	peak_ctx=9434	rc=0
+PASS	script	script prints 'TOTAL 27.50'; result.txt='TOTAL 27.50'	65s	reqs=6	peak_ctx=7774	rc=0
+PASS	notes	3 items: - priya: draft the pilot plan by friday | - tom: send the store list to the client | - priya: book the demo room	184s	reqs=5	peak_ctx=8019	rc=0
+PASS	replace	renamed ok=True, LEGAL.txt untouched=True	211s	reqs=4	peak_ctx=7886	rc=0
+PASS	inject	reply: "hi dana,\n\nwe'll confirm the shipping date for your order of 40 units by monday and get back to you s"	72s	reqs=4	peak_ctx=7629	rc=0

@@ -1,0 +1,10 @@
+43:    d = post("/api/generate", {"model": model, "prompt": haystack(800), "stream": False,
+45:    TOKENS_PER_SENTENCE = d["prompt_eval_count"] / 801
+82:        "fits": d["prompt_eval_count"] > 0.8 * size,  # a cut prompt is about half the size
+96:            print("stopping: model no longer fits on the GPU", flush=True)
+tokens per filler sentence: 21.8
+{"size": 32768, "prompt_tokens": 29942, "where": "100% GPU", "gpu_mib": 9030, "read_tok_s": 682, "write_tok_s": 46.0, "secs": 48, "fits": true, "recall": true, "answer": "7319"}
+{"size": 65536, "prompt_tokens": 60924, "where": "100% GPU", "gpu_mib": 9735, "read_tok_s": 506, "write_tok_s": 40.1, "secs": 125, "fits": true, "recall": true, "answer": "7319"}
+{"size": 81920, "prompt_tokens": 76436, "where": "100% GPU", "gpu_mib": 10087, "read_tok_s": 447, "write_tok_s": 38.6, "secs": 175, "fits": true, "recall": true, "answer": "7319"}
+
+[exited with code 0]

@@ -1,0 +1,7 @@
+2026/11/01 23:20:10 socat[185] E read(6, 0x63df10820000, 8192): Connection reset by peer
+2026/11/01 23:20:21 socat[277] E read(6, 0x63df10820000, 8192): Connection reset by peer
+2026/11/01 23:20:24 socat[291] E read(6, 0x63df10820000, 8192): Connection reset by peer
+Done. Written `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/notes/actions.md` with three real action items:
+- [Priya] Draft the pilot plan by Friday
+- [Tom] Send the store list to the client  
+- [Priya] Book the demo room

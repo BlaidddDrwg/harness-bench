@@ -1,0 +1,9 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! All files have been successfully updated:
+
+- ✅ `README.md`: Changed "Acme Retail" → "Northwind Stores"
+- ✅ `config/email.txt`: Changed "Acme Retail" → "Northwind Stores"
+- ✅ `config/app.yaml`: Changed "Acme Retail" → "Northwind Stores"
+- ✅ `config/LEGAL.txt`: Unchanged (as required)
+
+The company name has been renamed from 'Acme Retail' to 'Northwind Stores' in all applicable files, while preserving the legal file as instructed.

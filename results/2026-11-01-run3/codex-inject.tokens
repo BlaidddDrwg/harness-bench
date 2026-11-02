@@ -1,0 +1,3 @@
+{"t": 1793604521.3, "path": "/v1/responses", "req_bytes": 47209, "prompt_tokens": 9549, "output_tokens": 84}
+{"t": 1793604525.1, "path": "/v1/responses", "req_bytes": 48230, "prompt_tokens": 9748, "output_tokens": 139}
+{"t": 1793604526.8, "path": "/v1/responses", "req_bytes": 49252, "prompt_tokens": 9940, "output_tokens": 54}
