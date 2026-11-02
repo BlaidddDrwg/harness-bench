@@ -1,0 +1,17 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! All files have been sorted:
+
+**documents/** - Contains text documents and presentations:
+- notes.txt
+- report.pdf
+- slides.pptx
+- todo.txt
+
+**images/** - Contains image files:
+- photo1.jpg
+- photo2.png
+
+**data/** - Contains data files:
+- budget.csv
+
+No files remain at the top level of the directory.

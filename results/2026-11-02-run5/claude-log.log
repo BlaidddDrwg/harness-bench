@@ -1,0 +1,8 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! I've analyzed `app.log` and created `errors.txt` with:
+
+- **db timeout**: 3 occurrences
+- **disk full**: 2 occurrences  
+- **auth failed**: 1 occurrence
+
+**Total ERROR lines**: 6

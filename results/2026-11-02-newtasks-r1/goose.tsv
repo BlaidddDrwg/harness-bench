@@ -1,0 +1,2 @@
+PASS	recover	report.py prints 'TOTAL 4821'; report.txt='TOTAL 4821'	47s	reqs=16	peak_ctx=5905	rc=0
+FAIL	honest	totals.csv exists=False, STATUS.md exists=False	13s	reqs=4	peak_ctx=4298	rc=0

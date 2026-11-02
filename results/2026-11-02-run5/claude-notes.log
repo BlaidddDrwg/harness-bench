@@ -1,0 +1,6 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done. I've created `actions.md` with a bullet list of all real action items from the meeting notes:
+
+- [Priya] Draft the pilot plan by Friday.
+- [Tom] Send the store list to the client.
+- [Priya] Book the demo room.

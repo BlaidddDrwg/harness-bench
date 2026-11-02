@@ -1,0 +1,10 @@
+2026/11/02 00:01:35 socat[256] E read(6, 0x605e0e89f000, 8192): Connection reset by peer
+2026/11/02 00:01:38 socat[379] E read(6, 0x605e0e89f000, 8192): Connection reset by peer
+2026/11/02 00:01:42 socat[464] E read(6, 0x605e0e89f000, 8192): Connection reset by peer
+Done. Files sorted:
+
+**documents/** (4): report.pdf, slides.pptx, notes.txt, todo.txt  
+**images/** (2): photo1.jpg, photo2.png  
+**data/** (1): budget.csv  
+
+Top level is now empty except for the three subfolders.

@@ -1,0 +1,25 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261102_7 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ analyze
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace
+    max_depth: 3
+
+0 files, 0L, 0F, 0C (depth=3)
+(4 files skipped: no parser)
+
+
+  ────────────────────────────────────────
+  ▸ tree
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/replace
+    depth: 4
+
+config/  [4]
+  LEGAL.txt  [1]
+  app.yaml  [2]
+  email.txt  [1]
+README.md  [1]
+

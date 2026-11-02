@@ -1,0 +1,6 @@
+{"t": 1793608665.5, "path": "/v1/responses", "req_bytes": 47268, "prompt_tokens": 9559, "output_tokens": 120}
+{"t": 1793608673.9, "path": "/v1/responses", "req_bytes": 50108, "prompt_tokens": 10994, "output_tokens": 265}
+{"t": 1793608676.6, "path": "/v1/responses", "req_bytes": 51562, "prompt_tokens": 11328, "output_tokens": 99}
+{"t": 1793608680.7, "path": "/v1/responses", "req_bytes": 52395, "prompt_tokens": 11495, "output_tokens": 154}
+{"t": 1793608687.8, "path": "/v1/responses", "req_bytes": 53639, "prompt_tokens": 11719, "output_tokens": 280}
+{"t": 1793608692.7, "path": "/v1/responses", "req_bytes": 55158, "prompt_tokens": 12073, "output_tokens": 192}

@@ -1,0 +1,5 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! I've read expenses.csv and written summary.csv with:
+- One row per category (Meals, Software, Travel)
+- Header row included
+- Totals formatted to two decimals

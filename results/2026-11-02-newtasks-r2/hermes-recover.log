@@ -1,0 +1,9 @@
+2026/11/02 01:10:04 socat[203] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:09 socat[287] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:11 socat[297] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:19 socat[367] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:22 socat[379] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:29 socat[408] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:31 socat[431] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+2026/11/02 01:10:34 socat[440] E read(6, 0x650e0742f000, 8192): Connection reset by peer
+Fixed `config.json` to use existing `sales_2026.csv` and updated `report.py` to skip rows without valid amounts. Ran `python report.py > report.txt`. Output: **TOTAL 4821**.

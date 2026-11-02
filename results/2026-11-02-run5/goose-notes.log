@@ -1,0 +1,46 @@
+
+    __( O)>  ● new session · ollama qwen3.5:9b
+   \____)    20261102_6 · /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+     L L     goose is ready
+
+  ────────────────────────────────────────
+  ▸ tree
+    path: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes
+
+meeting-1.md  [3]
+meeting-2.md  [2]
+meeting-3.md  [3]
+
+  ────────────────────────────────────────
+  ▸ read_image
+    source: /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-1.md
+
+Error: unsupported image format; supported formats are png, jpeg, gif, and webp
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-1.md
+
+# Kickoff
+Priya will draft the pilot plan by Friday.
+We discussed budget.
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-2.md
+
+# Weekly
+General updates only. Nothing assigned.
+  ────────────────────────────────────────
+  ▸ shell
+    command: cat /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/meeting-3.md
+
+# Retail sync
+Action: Tom to send the store list to the client.
+Action: Priya to book the demo room.
+  ────────────────────────────────────────
+  ▸ write
+    path ~/Projects/AI/harness-bench/runs/goose/notes/actions.md
+    content: * [Priya] Draft the pilot plan by Friday
+* [Tom] Send the store list to the client
+* [Priya] Book the demo room
+
+Created /home/blaidddrwg/Projects/AI/harness-bench/runs/goose/notes/actions.md (3 lines)

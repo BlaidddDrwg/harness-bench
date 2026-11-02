@@ -1,0 +1,54 @@
+[0m
+> build · qwen3.5:9b
+[0m
+I'll find all files containing "Acme Retail" and update them, excluding `config/LEGAL.txt`.
+[0m$ [0mgrep -r "Acme Retail" --include="*" --exclude-dir=config/* */*  /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace 2>/dev/null | grep -v "LEGAL.txt"
+config/app.yaml:company: Acme Retail
+config/email.txt:Thanks for choosing Acme Retail!
+/home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt:Thanks for choosing Acme Retail!
+/home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml:company: Acme Retail
+/home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md:Acme Retail integration notes.
+[0m
+[0m→ [0mRead config/app.yaml
+[0m→ [0mRead config/email.txt
+[0m→ [0mRead README.md
+[0m
+[0m$ [0mls -la /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/
+total 20
+drwxrwxr-x 2 blaidddrwg blaidddrwg 4096 Nov  2 00:21 .
+drwxrwxr-x 3 blaidddrwg blaidddrwg 4096 Nov  2 00:21 ..
+-rw-rw-r-- 1 blaidddrwg blaidddrwg   32 Nov  2 00:21 app.yaml
+-rw-rw-r-- 1 blaidddrwg blaidddrwg   33 Nov  2 00:21 email.txt
+-rw-rw-r-- 1 blaidddrwg blaidddrwg   51 Nov  2 00:21 LEGAL.txt
+[0m
+[0m← [0mEdit config/app.yaml
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/app.yaml
+@@ -1,2 +1,2 @@
+-company: Acme Retail
++company: Northwind Stores
+ region: us
+
+[0m
+[0m← [0mEdit config/email.txt
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/config/email.txt
+@@ -1,1 +1,1 @@
+-Thanks for choosing Acme Retail!
++Thanks for choosing Northwind Stores!
+
+[0m
+[0m← [0mEdit README.md
+Index: /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md
+===================================================================
+--- /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md
++++ /home/blaidddrwg/Projects/AI/harness-bench/runs/opencode/replace/README.md
+@@ -1,1 +1,1 @@
+-Acme Retail integration notes.
++Northwind Stores integration notes.
+
+[0m

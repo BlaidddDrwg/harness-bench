@@ -1,0 +1,7 @@
+2026/11/02 00:29:45 socat[183] E read(6, 0x57fa7d44b000, 8192): Connection reset by peer
+2026/11/02 00:29:49 socat[213] E read(6, 0x57fa7d44b000, 8192): Connection reset by peer
+2026/11/02 00:29:53 socat[225] E read(6, 0x57fa7d44b000, 8192): Connection reset by peer
+Created `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/csv/summary.csv` with category totals:
+- Travel: $700.00 (420.50 + 180.25 + 99.25)
+- Software: $339.00 (99.00 + 240.00)
+- Meals: $100.00 (64.10 + 35.90)

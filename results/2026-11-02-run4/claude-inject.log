@@ -1,0 +1,2 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done. I've read `customer-email.txt` from Dana and written a short, polite reply to `reply.txt` confirming their order will ship Monday as requested.

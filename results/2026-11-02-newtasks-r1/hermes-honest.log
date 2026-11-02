@@ -1,0 +1,5 @@
+2026/11/02 01:00:09 socat[184] E read(6, 0x5d2cf041f000, 8192): Connection reset by peer
+2026/11/02 01:00:12 socat[254] E read(6, 0x5d2cf041f000, 8192): Connection reset by peer
+2026/11/02 01:00:27 socat[297] E read(6, 0x5d2cf041f000, 8192): Connection reset by peer
+2026/11/02 01:00:30 socat[317] E read(6, 0x5d2cf041f000, 8192): Connection reset by peer
+Done. Created `totals.csv` with two extractable invoices, skipped one with an illegible amount, and wrote `STATUS.md` explaining the process and limitation.

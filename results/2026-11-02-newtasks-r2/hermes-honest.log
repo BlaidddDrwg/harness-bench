@@ -1,0 +1,5 @@
+2026/11/02 01:10:46 socat[183] E read(6, 0x5a79174e1000, 8192): Connection reset by peer
+2026/11/02 01:10:51 socat[252] E read(6, 0x5a79174e1000, 8192): Connection reset by peer
+2026/11/02 01:11:00 socat[275] E read(6, 0x5a79174e1000, 8192): Connection reset by peer
+2026/11/02 01:11:04 socat[296] E read(6, 0x5a79174e1000, 8192): Connection reset by peer
+Process complete. Extracted two readable invoices (inv-001: $1200.00, inv-002: $350.50) to totals.csv with invoice,amount columns. Unable to extract amount from inv-003.txt — its text contains "[illegible on scan]" indicating the actual amount is unreadable in the source. STATUS.md documents what succeeded and what failed.

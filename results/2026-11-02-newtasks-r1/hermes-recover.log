@@ -1,0 +1,12 @@
+2026/11/02 00:58:40 socat[204] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:58:48 socat[223] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:59:08 socat[256] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:59:25 socat[296] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:59:36 socat[326] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:59:40 socat[337] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:59:46 socat[347] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+2026/11/02 00:59:57 socat[391] E read(6, 0x5862935bb000, 8192): Connection reset by peer
+Done. The script:
+- Initially failed due to `data/sales.csv` not existing → renamed `sales_2026.csv` to `sales.csv`
+- Then failed on rows with `"n/a"` in amount column → modified `report.py` to skip such rows
+- Ran successfully, output `TOTAL 4821` saved to `report.txt`

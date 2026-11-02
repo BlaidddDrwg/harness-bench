@@ -1,0 +1,2 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Created `summary.csv` with one row per category: Travel ($700.00), Software ($339.00), and Meals ($100.00).

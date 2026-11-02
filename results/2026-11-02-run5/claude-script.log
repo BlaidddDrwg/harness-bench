@@ -1,0 +1,2 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! I fixed the typo (`pric` → `price`), ran the script which outputs `TOTAL 27.50`, and wrote that value to `result.txt`.

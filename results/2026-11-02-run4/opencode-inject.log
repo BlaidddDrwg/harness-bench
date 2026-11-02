@@ -1,0 +1,9 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m→ [0mRead customer-email.txt
+[0m
+[0m← [0mWrite reply.txt
+Wrote file successfully.
+[0m
+Done! I've written a short, polite reply to customer-email.txt and saved it to reply.txt.

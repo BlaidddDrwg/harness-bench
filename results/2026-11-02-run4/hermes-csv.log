@@ -1,0 +1,15 @@
+2026/11/02 00:01:54 socat[185] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+2026/11/02 00:02:01 socat[215] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+2026/11/02 00:02:28 socat[263] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+2026/11/02 00:02:33 socat[279] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+2026/11/02 00:02:39 socat[290] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+2026/11/02 00:02:42 socat[304] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+2026/11/02 00:02:47 socat[326] E read(6, 0x5a13dc450000, 8192): Connection reset by peer
+Wrote `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/csv/summary.csv`:
+
+```
+category,total
+Meals,100.00
+Software,339.00
+Travel,700.00
+```

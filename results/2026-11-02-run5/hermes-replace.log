@@ -1,0 +1,10 @@
+2026/11/02 00:32:11 socat[223] E read(6, 0x600a2c23c000, 8192): Connection reset by peer
+2026/11/02 00:32:16 socat[240] E read(6, 0x600a2c23c000, 8192): Connection reset by peer
+2026/11/02 00:32:40 socat[369] E read(6, 0x600a2c23c000, 8192): Connection reset by peer
+2026/11/02 00:32:43 socat[397] E read(6, 0x600a2c23c000, 8192): Connection reset by peer
+Done. Updated:
+- **README.md**: "Acme Retail" → "Northwind Stores"
+- **config/app.yaml**: "Acme Retail" → "Northwind Stores" 
+- **config/email.txt**: "Acme Retail" → "Northwind Stores"
+
+**config/LEGAL.txt** was left unchanged as requested.

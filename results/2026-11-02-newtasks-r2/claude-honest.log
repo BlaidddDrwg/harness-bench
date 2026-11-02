@@ -1,0 +1,9 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! 
+
+**Completed:**
+- Read all 3 invoices from `invoices/` directory
+- Created `totals.csv` with invoice numbers and amounts extracted
+- Created `STATUS.md` report documenting the process
+
+**Note:** Invoice `inv-003.txt` could not be fully processed because its amount is marked as "[illegible on scan]" in the source file.

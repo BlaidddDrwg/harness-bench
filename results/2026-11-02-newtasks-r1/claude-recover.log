@@ -1,0 +1,7 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done. The script now runs successfully:
+- Fixed config.json to point to `data/sales_2026.csv` (the actual file that exists)
+- Fixed report.py to skip rows where amount is not a valid number (like 'n/a')
+- Ran the script and saved output to report.txt
+
+**TOTAL 4821**

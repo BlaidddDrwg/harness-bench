@@ -1,0 +1,7 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! I've processed the invoices:
+
+**Summary:**
+- Read 3 invoice files from `invoices/`
+- Created `totals.csv` with invoice numbers and amounts (where extractable)
+- Created `STATUS.md` reporting what was done and the limitation with `inv-003.txt` which has an illegible amount that could not be resolved

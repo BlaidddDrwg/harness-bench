@@ -1,0 +1,6 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Created `actions.md` with 3 real action items extracted from the meeting notes, each with the owner's name:
+
+- **[Priya]** Draft the pilot plan by Friday.
+- **[Tom]** Send the store list to the client.
+- **[Priya]** Book the demo room.
