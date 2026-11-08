@@ -1,0 +1,2 @@
+2026/11/03 19:47:53 socat[245] E read(6, 0x5d46ab14e000, 8192): Connection reset by peer
+Stock count for HX-4471 at Reno is 3817. The number has been written to `/home/blaidddrwg/Projects/AI/harness-bench/runs/hermes/discover/stock.txt`.

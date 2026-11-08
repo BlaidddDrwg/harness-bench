@@ -1,0 +1,1 @@
+FAIL	discover	stock.txt numbers=['0'], called inventory_on_hand for HX-4471=False, server connected=True, tool calls=['inventory_on_hand', 'part_catalog_search']	32s	reqs=4	peak_ctx=12490	in=47671	out=1233	rc=0

@@ -1,0 +1,8 @@
+[0m
+> build · qwen3.5:9b
+[0m
+[0m⚙ [0mwarehouse_inventory_on_hand {"sku":"HX-4471","site":"reno"}
+[0m
+[0m← [0mWrite stock.txt
+Wrote file successfully.
+[0m

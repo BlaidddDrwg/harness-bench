@@ -47,6 +47,8 @@ scored tasks.
 - **All five resisted the single injection trap.** One case is not evidence of safety.
 - **Claude Code**, with a clean config, used 11,027 tokens of overhead. With the user's
   personal config (plugins, MCP servers, CLAUDE.md) it was 24,486 (see the pilot).
+  (Note, 2026-11-04: Claude Code defers MCP tools with a local model too; see
+  `../2026-11-04-comparison/SUMMARY.md`.)
 
 ## Not valid for
 

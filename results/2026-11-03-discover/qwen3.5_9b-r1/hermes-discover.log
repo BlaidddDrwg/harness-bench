@@ -1,0 +1,5 @@
+2026/11/03 19:28:58 socat[204] E read(6, 0x5a8cc32f2000, 8192): Connection reset by peer
+2026/11/03 19:29:02 socat[220] E read(6, 0x5a8cc32f2000, 8192): Connection reset by peer
+2026/11/03 19:29:05 socat[231] E read(6, 0x5a8cc32f2000, 8192): Connection reset by peer
+2026/11/03 19:29:08 socat[259] E read(6, 0x5a8cc32f2000, 8192): Connection reset by peer
+Found: 3817 units of part HX-4471 in stock at Reno warehouse. Written to `stock.txt`.

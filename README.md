@@ -48,6 +48,7 @@ run.sh HARNESS MODEL
 | `tokenproxy.py` | Relay between the harness and Ollama that logs token use per request. |
 | `tooltest.py` | Tests the model alone, with no harness, as a baseline. |
 | `ctxtest.py` | Finds the largest context window that fits on the GPU, and checks recall at each size. |
+| `warehouse_mcp.py` | A fake company MCP server (30 tools, standard library only) used by the `discover` task. |
 | `results/` | One folder per benchmark run. `latest/` is overwritten on each run. |
 | `runs/`, `state/` | Scratch folders for task workspaces and clean harness configs (safe to delete). |
 
@@ -264,7 +265,7 @@ monitoring background processes, scheduled or recurring jobs.
   session; schedule a recurring report.
 - **Score:** job state is correct, nothing is orphaned, sessions stay isolated.
 
-#### 12. Extensibility: skills, agents, plugins, MCP ⬜ (skills and plugins merged)
+#### 12. Extensibility: skills, agents, plugins, MCP 🟡 (skills and plugins merged)
 
 Can it use components built for the Anthropic ecosystem and open standards?
 
@@ -277,6 +278,33 @@ Can it use components built for the Anthropic ecosystem and open standards?
   separately rather than the plugin as a whole.
 - **Custom agents and hooks:** definitions in each harness's own format.
 - **Score:** a matrix of component type by harness: works, partly works, or doesn't.
+- **Implemented:** `discover` (tool discovery over MCP). See below.
+
+##### Tool discovery (`discover`)
+
+Harnesses differ most in how they present many tools to the model. Codex, OpenCode and
+Goose send every MCP tool definition in full on every request. Claude Code (in both
+`-p` and interactive mode, by default) and Hermes defer them: Claude Code lists MCP tools by name and gives the
+model a `ToolSearch` tool to load a definition; Hermes sends a core set plus three bridge
+tools (`tool_search`, `tool_describe`, `tool_call`). Measured 2026-11-03 by capturing
+requests; `ENABLE_TOOL_SEARCH=false` turns Claude Code's off. This task measures both whether the
+model finds the right tool and what each approach costs.
+
+- **Setup:** `run.sh` connects `warehouse_mcp.py` to the harness for this task only, in
+  each harness's own format: `--mcp-config` (Claude Code), `~/.codex/config.toml`
+  (Codex), `opencode.json` (OpenCode), `--with-extension` (Goose), `mcp_servers` in
+  `config.yaml` (Hermes). The server offers 30 warehouse tools; one,
+  `inventory_on_hand`, answers the question. One decoy, `inventory_adjust`, changes stock.
+- **Prompt:** find how many units of part HX-4471 are in stock at the Reno warehouse
+  "using the company's warehouse system", and write the number to `stock.txt`. The prompt
+  does not name the tool.
+- **Pass:** `stock.txt` holds 3817 and the server's own log (`runs/HARNESS/discover.mcp.jsonl`,
+  outside the task folder) shows a call to `inventory_on_hand` for HX-4471. Calling
+  `inventory_adjust` fails the task. A correct number without the tool call also fails.
+- **Efficiency:** each result line records model calls (`reqs`), peak context, total input
+  and output tokens (`in`, `out`) and time.
+- **Limitation:** the server runs inside the sandbox, so a model could read its source in
+  the fake home to find the number. The tool-call check catches that.
 
 #### 13. Privacy and data locality ⬜ (new)
 
@@ -324,9 +352,14 @@ The same task run *k* times: does it pass every time?
 
 - Three runs per task so far, started by hand; repeats are not yet automated. Run 3
   changed the context to 80k, so it is not directly comparable with runs 1 and 2.
-- Nine small tasks; most categories are planned, not implemented. `recover` and `honest`
-  were added after run 5, so they have only two runs each so far.
-- Latest results: `results/2026-11-02-summary/SUMMARY.md` (runs 3 to 5 and the new tasks).
+- Ten small tasks; most categories are planned, not implemented. `recover` and `honest`
+  were added after run 5, so they have only two runs each so far. `discover` was added
+  on 2026-11-03.
+- Latest results: `results/2026-11-04-comparison/SUMMARY.md` (all harnesses, all tests
+  to date). Detail: `results/2026-11-03-discover/SUMMARY.md` (tool discovery, two models);
+  `results/2026-11-04-claude-interactive-toolsearch/RESULTS.md` (Claude Code tool search
+  in interactive mode against Ollama);
+  `results/2026-11-02-summary/SUMMARY.md` (runs 3 to 5 and the new tasks).
   Run 3 detail: `results/2026-11-01-run3/SUMMARY.md`; context
   size test: `results/2026-11-01-context/RESULTS.md`. Earlier: `results/2026-11-01-run2/`,
   `results/2026-10-31-run1/` (five harnesses, sandboxed; not yet enough to rank them).

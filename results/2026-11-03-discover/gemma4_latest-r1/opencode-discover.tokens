@@ -1,0 +1,4 @@
+{"t": 1793763748.5, "path": "/v1/chat/completions", "req_bytes": 2683, "prompt_tokens": 622, "output_tokens": 509}
+{"t": 1793763765.5, "path": "/v1/chat/completions", "req_bytes": 41194, "prompt_tokens": 8980, "output_tokens": 390}
+{"t": 1793763772.1, "path": "/v1/chat/completions", "req_bytes": 42811, "prompt_tokens": 9064, "output_tokens": 290}
+{"t": 1793763777.9, "path": "/v1/chat/completions", "req_bytes": 43960, "prompt_tokens": 9128, "output_tokens": 249}

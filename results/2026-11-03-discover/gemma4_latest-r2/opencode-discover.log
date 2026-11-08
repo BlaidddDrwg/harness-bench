@@ -1,0 +1,9 @@
+[0m
+> build · gemma4:latest
+[0m
+[0m⚙ [0mwarehouse_inventory_on_hand {"site":"reno","sku":"HX-4471"}
+[0m
+[0m← [0mWrite stock.txt
+Wrote file successfully.
+[0m
+The stock level for part HX-4471 at the Reno warehouse (3817 units) has been written to stock.txt.

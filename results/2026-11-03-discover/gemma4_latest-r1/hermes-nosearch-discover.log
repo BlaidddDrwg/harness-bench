@@ -1,0 +1,3 @@
+2026/11/03 19:40:57 socat[236] E read(6, 0x598a58b26000, 8192): Connection reset by peer
+2026/11/03 19:41:00 socat[264] E read(6, 0x598a58b26000, 8192): Connection reset by peer
+The stock for part HX-4471 at the Reno warehouse is 3817 units. This number has been written to stock.txt.

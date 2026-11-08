@@ -1,0 +1,4 @@
+2026/11/03 19:44:42 socat[206] E read(6, 0x61581bb2b000, 8192): Connection reset by peer
+2026/11/03 19:44:46 socat[220] E read(6, 0x61581bb2b000, 8192): Connection reset by peer
+2026/11/03 19:44:49 socat[248] E read(6, 0x61581bb2b000, 8192): Connection reset by peer
+3817

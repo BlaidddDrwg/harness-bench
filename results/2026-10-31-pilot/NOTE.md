@@ -8,3 +8,4 @@
 - Claude Code used the user's personal configuration (CLAUDE.md, plugins, MCP servers),
   which added about 13,400 tokens of context and confused the model on `replace`.
   With a clean configuration its overhead is 11,059 tokens.
+  Its `replace` log is not included, because it quoted that personal configuration.

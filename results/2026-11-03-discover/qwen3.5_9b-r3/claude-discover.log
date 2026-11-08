@@ -1,0 +1,2 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done! The current stock count for part **HX-4471** at the Reno warehouse is **3817** units, which has been written to `stock.txt`.

@@ -1,0 +1,3 @@
+2026/11/03 19:29:24 socat[205] E read(6, 0x64f605d61000, 8192): Connection reset by peer
+2026/11/03 19:29:30 socat[245] E read(6, 0x64f605d61000, 8192): Connection reset by peer
+Done. 3817 units of HX-4471 at Reno warehouse written to stock.txt.

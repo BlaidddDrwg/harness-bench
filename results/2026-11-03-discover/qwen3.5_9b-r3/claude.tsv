@@ -1,0 +1,1 @@
+PASS	discover	stock.txt numbers=['3817'], called inventory_on_hand for HX-4471=True, server connected=True, tool calls=['inventory_on_hand', 'inventory_on_hand']	102s	reqs=13	peak_ctx=15141	in=148200	out=1596	rc=0

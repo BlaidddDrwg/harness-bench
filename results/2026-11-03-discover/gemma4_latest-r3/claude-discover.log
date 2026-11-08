@@ -1,0 +1,6 @@
+[claude-code:unrecognized_model] {"model":"gemma4:latest","query_source":"sdk"}
+I have successfully queried the warehouse system for the inventory of part `HX-4471` at the Reno warehouse.
+
+The current on-hand stock count is **3817** units.
+
+I have written this number into `stock.txt` in the specified directory.

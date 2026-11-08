@@ -1,0 +1,2 @@
+[claude-code:unrecognized_model] {"model":"qwen3.5:9b","query_source":"sdk"}
+Done. The Reno warehouse has **3817** units of part HX-4471 in stock, and that number has been written to `stock.txt`.
